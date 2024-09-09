@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/new-trelolo/static/css/main.910e8ffb.css",
+    "main.js": "/new-trelolo/static/js/main.b7d49eba.js",
+    "index.html": "/new-trelolo/index.html",
+    "main.910e8ffb.css.map": "/new-trelolo/static/css/main.910e8ffb.css.map",
+    "main.b7d49eba.js.map": "/new-trelolo/static/js/main.b7d49eba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.910e8ffb.css",
+    "static/js/main.b7d49eba.js"
+  ]
+}
