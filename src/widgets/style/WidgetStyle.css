@@ -1,0 +1,14 @@
+.BoardBan {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr 3rem 1fr 3rem 1fr 3rem 1fr 3rem 0.5fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  padding-left: 30px;
+  gap: 3rem;
+  width: 100%;
+  overflow-x: auto;
+  font-size: 20px;
+}
+.BoardBan::-webkit-scrollbar {
+  height: 0;
+}

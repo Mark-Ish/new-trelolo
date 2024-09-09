@@ -1,0 +1,43 @@
+// Page Auth
+.authPage {
+  display: flex;
+  min-height: 100vh;
+}
+
+.Load {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Form
+.authForm {
+  width: 20%;
+  min-width: 150px;
+  margin: auto;
+  background-color: rgb(24, 24, 24);
+  box-shadow: 0px 1px 8px rgba(255, 255, 255, 0.205);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.authBlockBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 1.25rem;
+}
+
+.errorMsg {
+  color: rgb(255, 104, 104);
+  margin-top: 5px;
+}
+
+// Column Board
+.ColumnBoard {
+  width: 16rem;
+  white-space: nowrap;
+  min-height: 75vh;
+}

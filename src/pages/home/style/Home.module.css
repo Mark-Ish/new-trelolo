@@ -1,0 +1,50 @@
+.mainStatistic {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 1fr) 44px minmax(0, 1fr) 44px minmax(0, 1fr) 44px minmax(0, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 44px;
+  margin: 40px 20px 0 20px;
+}
+.mainStatistic .columsStatistic {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.053);
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: column;
+      flex-flow: column;
+}
+.mainStatistic .columsStatistic:hover {
+  -webkit-transform: translateY(0.65rem);
+          transform: translateY(0.65rem);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.mainStatistic .columsStatistic .label {
+  font-size: 20px;
+  line-height: 28px;
+}
+.mainStatistic .columsStatistic .content {
+  font-size: 30px;
+  line-height: 36px;
+}

@@ -1,0 +1,20 @@
+.treloloLink {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(87, 87, 87);
+  padding: 2vmin 0 2vmin 2vw;
+
+  .treloloIcon {
+    color: rgb(116, 57, 255);
+  }
+
+  span {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 32px;
+  }
+}

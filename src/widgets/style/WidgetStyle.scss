@@ -1,0 +1,13 @@
+// Board style
+.BoardBan {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  padding-left: 30px;
+  gap: 3rem;
+  width: 100%;
+  overflow-x: auto;
+  font-size: 20px;
+  &::-webkit-scrollbar {
+    height: 0;
+  }
+}

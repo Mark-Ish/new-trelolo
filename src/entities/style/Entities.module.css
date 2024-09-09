@@ -1,0 +1,291 @@
+.menuList {
+  margin-top: 10px;
+}
+
+.linksMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 6px 0 6px 20px;
+  margin-top: 8px;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  border-radius: 4px;
+}
+.linksMenu:hover, .linksMenu:focus {
+  background-color: rgb(56, 56, 56);
+}
+
+.profileLayout {
+  position: absolute;
+  right: 2.3rem;
+  top: 2rem;
+}
+.profileLayout .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profileLayout .profile .exitLink {
+  color: white;
+}
+.profileLayout .profile .emailAndName {
+  text-align: right;
+  margin-right: 12px;
+}
+.profileLayout .profile .emailAndName .nameProfile {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.profileLayout .profile .emailAndName .emailProfile {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.5;
+}
+.profileLayout .profile .avatar {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: rgb(116, 57, 255);
+  margin-right: 8px;
+}
+
+.card {
+  border: 1px solid rgb(87, 87, 87);
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgb(24, 24, 24);
+  position: relative;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.card.completed {
+  opacity: 0.5;
+}
+.card:hover {
+  background-color: rgb(29, 29, 29);
+}
+.card .cardHeader {
+  font-size: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px;
+}
+.card .cardBody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+  grid-template-rows: repeat(3, 1fr);
+}
+.card .cardBody > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.card .cardBody > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.card .cardBody > *:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.card .cardBody > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.card .cardBody > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.card .cardBody > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+.card .cardBody > div {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  margin-bottom: 5px;
+  min-width: 6rem;
+}
+.card .cardBody .iconsBlock {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  text-align: end;
+}
+.card .cardBody .iconsBlock .btnClear {
+  opacity: 0.7;
+  font-size: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+  cursor: pointer;
+}
+.card .cardBody .iconsBlock .btnClear:active {
+  opacity: 0.5;
+}
+.card .cardBody .iconsBlock .btnPiList {
+  opacity: 0.7;
+  font-size: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.card .cardBody .iconsBlock .btnPiList:active {
+  opacity: 0.5;
+}
+
+.Badge {
+  border-radius: 6px;
+  width: 100%;
+  padding: 4px 8px 4px 8px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  color: white;
+  -webkit-transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.high {
+  background-color: rgb(187, 65, 65);
+}
+
+.medium {
+  background-color: rgb(184, 140, 59);
+}
+
+.low {
+  background-color: rgb(58, 187, 58);
+}
+
+.default {
+  background-color: rgb(65, 65, 65);
+}
+
+.SelectPriorityMain {
+  position: relative;
+  min-width: 9rem;
+}
+.SelectPriorityMain .SelectPriorityBtn {
+  border: none;
+  border-radius: 6px;
+}
+.SelectPriorityMain .SelectedBadge {
+  text-transform: capitalize;
+}
+.SelectPriorityMain .ConteinerBadge {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  top: calc(100% + 1.5rem);
+  left: 0px;
+  background-color: rgb(24, 24, 24);
+  z-index: 10;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.SelectPriorityMain .ConteinerBadge button {
+  display: block;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 6px;
+}
+.SelectPriorityMain .clearSelectBtn {
+  position: absolute;
+  top: 0.4rem;
+  margin-left: 5px;
+  opacity: 0.3;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  border: none;
+  font-size: 12px;
+}
+.SelectPriorityMain .clearSelectBtn:hover {
+  background-color: rgb(36, 36, 36);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  opacity: 0.7;
+}
+
+.addTaskContainer {
+  margin-top: 14px;
+}
+.addTaskContainer .addTaskButton {
+  color: white;
+  background-color: rgb(18, 18, 18);
+  border: none;
+  opacity: 0.4;
+  cursor: pointer;
+  font-size: 14px;
+}
+.addTaskContainer .addTaskButton span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+}
+.addTaskContainer .addTaskButton:hover {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  opacity: 0.6;
+}

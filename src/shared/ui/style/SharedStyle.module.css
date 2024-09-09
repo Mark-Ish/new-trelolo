@@ -1,0 +1,193 @@
+@charset "UTF-8";
+.HeadingStyle h1 {
+  font-size: 30px;
+  line-height: 36px;
+  padding-left: 10px;
+}
+.HeadingStyle div {
+  height: 2px;
+  margin: 12px 20px 12px 10px;
+  background-color: rgb(87, 87, 87);
+}
+
+.inputEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  border: 1px solid rgb(87, 87, 87);
+  border-radius: 8px;
+  margin-top: 8px;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  padding: 3px;
+  font-size: 16px;
+  line-height: 24px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.inputEmail:focus {
+  border: 1px solid rgb(165, 0, 220);
+}
+
+.inputPassword {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  border: 1px solid rgb(87, 87, 87);
+  border-radius: 8px;
+  margin-top: 8px;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  padding: 3px;
+  font-size: 16px;
+  line-height: 24px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.inputPassword:focus {
+  border: 1px solid rgb(165, 0, 220);
+}
+
+.InputTask {
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 100%;
+}
+.InputTask.completedInput {
+  text-decoration-line: line-through;
+}
+.InputTask:focus {
+  outline: 2px solid transparent;
+}
+
+.loginBtn {
+  padding: 8px 0 8px 0;
+  min-width: 65px;
+  width: 30%;
+  color: white;
+  background-color: rgb(30, 30, 30);
+  border: 1px solid rgb(165, 0, 220);
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+.loginBtn:hover {
+  background-color: rgb(204, 0, 255);
+}
+.loginBtn:active {
+  background-color: blueviolet;
+}
+
+.registerBtn {
+  padding: 8px 0 8px 0;
+  min-width: 65px;
+  width: 30%;
+  color: white;
+  background-color: rgb(30, 30, 30);
+  border: 1px solid rgb(165, 0, 220);
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+.registerBtn:hover {
+  background-color: rgb(204, 0, 255);
+}
+.registerBtn:active {
+  background-color: blueviolet;
+}
+
+.inputLabel label {
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 6px;
+}
+
+.iconExit {
+  width: 30px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(50, 50, 50);
+  border-radius: 4px;
+  padding-left: 5px;
+  cursor: pointer;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+.iconExit:hover {
+  background-color: rgb(68, 68, 68);
+}
+
+.iconCross {
+  color: rgb(255, 255, 255);
+  background-color: rgb(50, 50, 50);
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.CheckBox label {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+.CheckBox label:before {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: " ";
+  width: 14px;
+  height: 14px;
+  background-color: rgb(24, 24, 24);
+  border: 1px solid #929292;
+  border-radius: 20%;
+}
+.CheckBox input {
+  display: none;
+}
+.CheckBox input:checked + label:before {
+  content: "✓";
+  color: white;
+  background-color: rgb(116, 57, 255);
+}

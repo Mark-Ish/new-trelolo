@@ -1,0 +1,261 @@
+// Menu item
+$bg-sidebar: rgb(24, 24, 24);
+
+.menuList {
+  margin-top: 10px;
+}
+
+.linksMenu {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 6px 0 6px 20px;
+  margin-top: 8px;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(56, 56, 56);
+  }
+}
+
+// Profile
+.profileLayout {
+  position: absolute;
+  right: 2.3rem;
+  top: 2rem;
+
+  .profile {
+    display: flex;
+    align-items: center;
+
+    .exitLink {
+      color: white;
+    }
+
+    .emailAndName {
+      text-align: right;
+      margin-right: 12px;
+
+      .nameProfile {
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+
+      .emailProfile {
+        font-size: 14px;
+        line-height: 20px;
+        opacity: 0.5;
+      }
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 4px;
+      background-color: rgb(116, 57, 255);
+      margin-right: 8px;
+    }
+  }
+}
+
+// Tasks section
+// Card sceleton
+.card {
+  border: 1px solid rgb(87, 87, 87);
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: $bg-sidebar;
+  position: relative;
+  transition-duration: 300ms;
+
+  &.completed {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: rgb(29, 29, 29);
+  }
+
+  .cardHeader {
+    font-size: 90%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .cardBody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    > div {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin-bottom: 5px;
+      min-width: 6rem;
+    }
+
+    .iconsBlock {
+      grid-column-start: 2;
+      grid-row-start: 3;
+      text-align: end;
+
+      .btnClear {
+        opacity: 0.7;
+        font-size: 20px;
+        background: none;
+        border: none;
+        padding: 0;
+        color: rgb(255, 255, 255);
+        margin-right: 10px;
+        cursor: pointer;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+      .btnPiList {
+        opacity: 0.7;
+        font-size: 20px;
+        background: none;
+        border: none;
+        padding: 0;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+// Badge
+.Badge {
+  border-radius: 6px;
+  width: 100%;
+  padding: 4px 8px 4px 8px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  color: white;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+$high: rgb(187, 65, 65);
+$medium: rgb(184, 140, 59);
+$low: rgb(58, 187, 58);
+$default: rgb(65, 65, 65);
+
+.high {
+  background-color: $high;
+}
+
+.medium {
+  background-color: $medium;
+}
+
+.low {
+  background-color: $low;
+}
+
+.default {
+  background-color: $default;
+}
+
+// Select Priority
+.SelectPriorityMain {
+  position: relative;
+  min-width: 9rem;
+
+  .SelectPriorityBtn {
+    border: none;
+    border-radius: 6px;
+  }
+
+  .SelectedBadge {
+    text-transform: capitalize;
+  }
+
+  .ConteinerBadge {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    top: calc(100% + 1.5rem);
+    left: 0px;
+    background-color: $bg-sidebar;
+    z-index: 10;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+
+    button {
+      display: block;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+      border: none;
+      border-radius: 6px;
+    }
+  }
+
+  .clearSelectBtn {
+    position: absolute;
+    top: 0.4rem;
+    margin-left: 5px;
+    opacity: 0.3;
+    color: white;
+    background-color: $bg-sidebar;
+    border: none;
+    font-size: 12px;
+
+    &:hover {
+      background-color: rgb(36, 36, 36);
+      transition-property: opacity;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+      opacity: 0.7;
+    }
+  }
+}
+
+// Add task
+.addTaskContainer {
+  margin-top: 14px;
+
+  .addTaskButton {
+    color: white;
+    background-color: rgb(18, 18, 18);
+    border: none;
+    opacity: 0.4;
+    cursor: pointer;
+    font-size: 14px;
+
+    span {
+      display: flex;
+      align-items: center;
+      pointer-events: none;
+    }
+
+    &:hover {
+      transition-property: opacity;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+      opacity: 0.6;
+    }
+  }
+}

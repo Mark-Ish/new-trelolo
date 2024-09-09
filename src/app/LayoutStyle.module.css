@@ -1,0 +1,10 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  min-height: 100vh;
+}
+
+.mainGlob {
+  overflow-x: hidden;
+  max-height: 100vh;
+}

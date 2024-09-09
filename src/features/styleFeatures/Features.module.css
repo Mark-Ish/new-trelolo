@@ -1,0 +1,55 @@
+.authPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.Load {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.authForm {
+  width: 20%;
+  min-width: 150px;
+  margin: auto;
+  background-color: rgb(24, 24, 24);
+  -webkit-box-shadow: 0px 1px 8px rgba(255, 255, 255, 0.205);
+          box-shadow: 0px 1px 8px rgba(255, 255, 255, 0.205);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.authBlockBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  gap: 1.25rem;
+}
+
+.errorMsg {
+  color: rgb(255, 104, 104);
+  margin-top: 5px;
+}
+
+.ColumnBoard {
+  width: 16rem;
+  white-space: nowrap;
+  min-height: 75vh;
+}
